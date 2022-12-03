@@ -1,14 +1,18 @@
 # Bandcamp_Metadata_Filler
-Takes files downloaded form Bandcamp renames them to title and sets the metadata accordingly. 
+This script is a work in progress.
 
-#### Path as argument is in the making, at the moment only same directory fills are possible (See below)
+The script goes through all files that are in the same directory as itself. It then reads out title, album, artist and track number via the Bandcamp file name. The collected informations gets added to the metadata of the files. It then creates a directory inside the current one and saves a copy of all songs named after the song.
+
+## Example
+
+
 
 ## How to use
 Place Python file inside your album folder and run it with the following command:
 ```
 python BC_MetadataFiller.py -sameDir
 ```
-The script will search for information in the files name and adds it to the meta data of the original file. Then it creates a folder named "Metadata_FIles" where it copies the files with then title as file name instead of the Bandcamp string.
+
 
 
 
